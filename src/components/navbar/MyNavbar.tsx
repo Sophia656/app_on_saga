@@ -6,7 +6,6 @@ const MyNavbar: FC = () => {
     const {setAuth, auth} = useContext(DataContext)
     const handleExit = () => {
         setAuth(!auth)
-        localStorage.clear()
     }
     return (
         <Navbar bg="dark" variant="dark">

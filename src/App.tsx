@@ -6,7 +6,7 @@ import { DataContext } from './context';
 import { fetchContacts } from './redux/reducers/contactsReducer';
 import { fetchTasks } from './redux/reducers/tasksReducer';
 import Contacts from './redux/types/contsctsTypes';
-import Tasks from './redux/types/tasksTypes';
+import Tasks, { task } from './redux/types/tasksTypes';
 
 interface ContactsState {
   contactsReducer: Contacts
@@ -27,9 +27,19 @@ const App: FC = () => {
     const [auth, setAuth] = useLocalStorage('auth', 'false')
     const [currentUser, setCurrentUser] = useLocalStorage('user', '0')
     const [currentId, setCurrentId] = useState('');
-    console.log(currentId)
+
+
     return (
-      <DataContext.Provider value={{contacts, tasks, auth, setAuth, currentId, setCurrentId, currentUser, setCurrentUser}}>
+      <DataContext.Provider value={{
+        contacts,
+        tasks,
+        auth,
+        setAuth,
+        currentId,
+        setCurrentId,
+        currentUser,
+        setCurrentUser
+        }}>
         <AppRouter />
       </DataContext.Provider>
     );
