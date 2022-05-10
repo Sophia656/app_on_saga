@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/app_on_saga/static/css/main.38be36b0.css",
+    "main.js": "/app_on_saga/static/js/main.b30fa607.js",
+    "index.html": "/app_on_saga/index.html",
+    "main.38be36b0.css.map": "/app_on_saga/static/css/main.38be36b0.css.map",
+    "main.b30fa607.js.map": "/app_on_saga/static/js/main.b30fa607.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38be36b0.css",
+    "static/js/main.b30fa607.js"
+  ]
+}
